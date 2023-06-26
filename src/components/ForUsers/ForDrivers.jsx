@@ -1,9 +1,33 @@
+import { useEffect } from "react";
 import Card from "../Card/Card";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./ForUsers.css";
 
+let contentArray = [
+  [
+    'Primer titulo',
+    'Habia una vez un circo que alegraba siempre el corazon'
+  ],
+  [
+    'Segundo titulo',
+    'Poco a poco, fuimos volviendonos locos'
+  ],
+  [
+    'Tercer titulo', 
+    'Muchachooos, ahora nos volvimos a ilusionar, quiero ganar la tercera, quiero ser campeon mundial'],
+  [
+    'Cuarto titulo',
+    'Meeeeeesssiii, meeeeeessssiiiii, messssssiiiiii'
+  ]
+];
+
 const ForDrivers = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className='cards-parent-container'>
       <Navbar />
@@ -11,26 +35,13 @@ const ForDrivers = () => {
         <h2 className='title-banner'>
           FOR
           <br />
-          PASSENGERS
+          DRIVERS
         </h2>
       </div>
       <div className='cards-container'>
-        <div className='cards-column'>
-          <Card
-            title={"Poner algo para probar los espacios"}
-            par={"asdasdasdsadadsd fg hfgh gf f fhfgfhgfedsdfsd"}
-            number={"01 |"}
-          />
-          <Card
-            title={"blabla blalb lbla bla"}
-            par={"asdasdasdsadadsd fgh fghfg fg hfgfgf hola hoala hola hola"}
-            number={"02 |"}
-          />
-        </div>
-        <div className='cards-column'>
-          <Card title={"gfdhgfh hg f"} par={"asdasdasdsadadsd dgdff h gh fhfg gf hfg hfg"} number={"03 |"} />
-          <Card title={"hooal oasl os holaa"} par={"lsadasdas asd asdasd  asd sad  asdasdas"} number={"04 |"} />
-        </div>
+        {contentArray.map((e, index) => (
+              <Card key={index} title={e[0]} par={e[1]} number={index + 1 + ' |'}/>
+            ))}
       </div>
       <Footer />
     </div>
