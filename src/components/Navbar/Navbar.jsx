@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -9,12 +9,22 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLogoClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className='nav-container'>
       <nav className='navbar'>
-        <Link className='navbar-logo' to={"/"}>
+        <NavLink
+          exact='true'
+          to='/'
+          className='navbar-logo'
+          onClick={() => {
+            isMenuOpen && toggleMenu();
+          }}>
           <h1 className='navbar-logo'>DRIVE COMUNITY.</h1>
-        </Link>
+        </NavLink>
         <div className={`menu-toggle ${isMenuOpen ? "is-active" : ""}`} id='mobile-menu' onClick={toggleMenu}>
           <span className='bar'></span>
           <span className='bar'></span>
