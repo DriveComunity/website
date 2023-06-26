@@ -91,12 +91,12 @@
   }
 
   .booking-content {
-    margin: 20px 20px; /* Center the content vertically and horizontally */
+    margin: 20px 20px;
   }
 
   .title-section,
   .text-section {
-    text-align: left; /* Center the text */
+    text-align: left;
   }
   .download-content {
     display: none;

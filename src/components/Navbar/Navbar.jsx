@@ -1,28 +1,25 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useRef } from "react";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLogoClick = () => {
+    if (isMenuOpen) {
+      toggleMenu();
+    }
     window.scrollTo(0, 0);
   };
-
   return (
     <div className='nav-container'>
       <nav className='navbar'>
-        <NavLink
-          exact='true'
-          to='/'
-          className='navbar-logo'
-          onClick={() => {
-            isMenuOpen && toggleMenu();
-          }}>
+        <NavLink exact='true' to='/' className='navbar-logo' onClick={handleLogoClick}>
           <h1 className='navbar-logo'>DRIVE COMUNITY.</h1>
         </NavLink>
         <div className={`menu-toggle ${isMenuOpen ? "is-active" : ""}`} id='mobile-menu' onClick={toggleMenu}>

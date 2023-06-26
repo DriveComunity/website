@@ -10,10 +10,12 @@ const PopUp = () => {
       {isOpen && (
         <div className='modal-overlay'>
           <div className='popup-container'>
-            <h3>get the app</h3>
+            <h3>We are almost there!</h3>
             <p>
-              we are working in the app, if you want you can pre register over here and we will let you know when the
-              app is ready TRABAJAR MEJOR EN EL TEXTO Y LOS ESTILOS!
+              We're excited to announce that we're diligently working on developing an amazing app for you. We're
+              pouring our time, effort, and creativity into crafting an exceptional user experience. The wait is almost
+              over, so hang in there for a seamless and thrilling journey ahead. We appreciate your patience and can't
+              wait to unveil it to you. Stay tuned for the big reveal!
             </p>
             <button className='close-button' onClick={closePopup}>
               Close

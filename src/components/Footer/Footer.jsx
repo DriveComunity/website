@@ -1,14 +1,22 @@
 import "./Footer.css";
+import React, { useContext } from "react";
+import { Context } from "../context/Context";
 
 const Footer = () => {
+  const { openPopup } = useContext(Context);
+  const handleOpenPopup = () => {
+    openPopup();
+  };
   return (
     <footer className='footer'>
       <h2 className='title'>Be part of our Comunity</h2>
       <button className='register-button'>Register</button>
       <div className='footer-sections'>
-        <span className='section'>Contact Us</span>
+        <button className='section'>Contact Us</button>
         <span className='separator'>|</span>
-        <span className='section'>Get the App</span>
+        <button className='section' onClick={handleOpenPopup}>
+          Get the App
+        </button>
       </div>
       <p className='rights'>All rights reserved DriveComunity</p>
     </footer>

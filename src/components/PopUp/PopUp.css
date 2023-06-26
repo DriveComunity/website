@@ -29,6 +29,8 @@
 .popup-container p {
   font-size: 16px;
   margin-bottom: 20px;
+  line-height: var(--xl-line-height);
+  text-align: left;
 }
 
 .popup-container .close-button {
