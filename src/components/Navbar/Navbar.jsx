@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='nav-container'>
       <nav className='navbar'>
         <Link className='navbar-logo' to={"/"}>
-          <h1 className='navbar-logo'>DRIVE ME.</h1>
+          <h1 className='navbar-logo'>DRIVE COMUNITY.</h1>
         </Link>
         <div className={`menu-toggle ${isMenuOpen ? "is-active" : ""}`} id='mobile-menu' onClick={toggleMenu}>
           <span className='bar'></span>

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   margin: 25px;
+  background-color: var(--base-white);
 }
 
 .title {
@@ -67,6 +68,7 @@
 .text {
   font-size: 20px;
   line-height: var(--xl-line-height);
+  font-weight: 300;
 }
 
 @media screen and (max-width: 640px) {

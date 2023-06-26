@@ -31,9 +31,9 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
 }
-.slide-content p {
+.slide-content h5 {
   font-size: 2vw;
-  line-height: 0.2;
+  line-height: 0.4;
   color: white;
   opacity: 0.7;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -46,7 +46,7 @@
   color: #fff;
   border: 2px #24a068 solid;
   border-radius: 5px;
-
+  font-weight: 700;
   cursor: pointer;
 }
 

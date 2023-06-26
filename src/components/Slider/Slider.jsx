@@ -52,7 +52,7 @@ const SliderComponent = () => {
       <img src={image} alt={title} />
       <div className='slide-content'>
         <h1>Your Trip, Your Adventure</h1>
-        <p>Let's drive together</p>
+        <h5>Let's drive together</h5>
         <button className='download-button' onClick={handleOpenPopup}>
           Get the App
         </button>

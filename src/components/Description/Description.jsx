@@ -10,7 +10,7 @@ const Description = () => {
         {/* <div className='animation-container'>
           <PhoneSketch />
         </div> */}
-        <h1 className='phone-title'>DriveMe</h1>
+        <h1 className='phone-title'>DRIVE COMUNITY</h1>
         {/* {window.innerWidth <= 1024 && <h1 className='phone-title'>DriveMe</h1>} */}
         <img src='src/assets/mockup.png' alt='cellphone' className='phone-img' />
       </div>

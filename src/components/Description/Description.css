@@ -58,7 +58,6 @@
 
 .column-container .image img {
   width: 30px;
-  /* background-color: var(--base-white); */
 }
 
 .content-section {
@@ -77,11 +76,11 @@
 
 .content-section p {
   max-width: 400px;
-  line-height: var(--sm-line-height);
+  line-height: var(--xl-line-height);
 }
 
 .phone-title {
-  display: none; /* Hide the title by default */
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   .img-container {
@@ -97,19 +96,21 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 40%; /* Adjust the top position according to your preference */
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 74px; /* Adjust the font size according to your preference */
+    font-size: 64px;
     color: var(--base-green);
     z-index: 2;
+
+    white-space: nowrap;
   }
 
   .parent-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Add this line to center the content horizontally */
-    justify-content: center; /* Add this line to center the content vertically */
+    align-items: center;
+    justify-content: center;
   }
 
   .description-container {
@@ -119,23 +120,29 @@
     justify-content: center;
     width: 100%;
     background-color: var(--base-green);
-    margin-top: 20px; /* Add this line to create some spacing */
+    margin-top: 20px;
   }
 
   .content-container {
-    margin: 20px 20px; /* Center the content horizontally */
+    margin: 20px 20px;
   }
 
   .row-container {
-    justify-content: center; /* Center the row content horizontally */
+    justify-content: center;
   }
 
   .column-container {
-    margin-right: 0; /* Remove the right margin */
-    justify-content: center; /* Center the column content horizontally */
+    margin-right: 0;
+    justify-content: center;
   }
 
   .content-section {
-    text-align: left; /* Center the text */
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .phone-title {
+    font-size: 44px;
   }
 }

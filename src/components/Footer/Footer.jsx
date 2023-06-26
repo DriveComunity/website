@@ -10,7 +10,7 @@ const Footer = () => {
         <span className='separator'>|</span>
         <span className='section'>Get the App</span>
       </div>
-      <p className='rights'>All rights reserved DriveMe</p>
+      <p className='rights'>All rights reserved DriveComunity</p>
     </footer>
   );
 };
