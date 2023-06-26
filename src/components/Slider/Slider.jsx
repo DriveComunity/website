@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Slider from "react-slick";
 import { Context } from "../context/Context";
-import PopUp from "../PopUp/PopUp"; // Import the pop-up component
+import PopUp from "../PopUp/PopUp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
@@ -9,7 +9,7 @@ import "./Slider.css";
 const SliderComponent = () => {
   const { openPopup } = useContext(Context);
   const handleOpenPopup = () => {
-    openPopup(); // Llama a la función openPopup desde el contexto para mostrar el pop-up
+    openPopup();
   };
   const settings = {
     dots: true,
