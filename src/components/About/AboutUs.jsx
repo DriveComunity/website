@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "./AboutUs.css";
+import topLeftIcon from "../../assets/light-bulb-green.png";
+import bottomRightIcon from "../../assets/save-the-planet-green.png";
 
 const AboutUs = () => {
   const [selectedButton, setSelectedButton] = useState(1);
@@ -27,9 +29,12 @@ const AboutUs = () => {
       clearInterval(intervalId);
     };
   }, [isLoopActive]);
-  // className={`container ${selectedButton === 1 ? "section1" : ""}`}
+
   return (
     <div className='container'>
+      <img src={topLeftIcon} alt='Top Left Icon' className='top-left-icon' />
+      <img src={bottomRightIcon} alt='Bottom Right Icon' className='bottom-right-icon' />
+
       <h2 className='title'>Get to Know Us</h2>
 
       <div className='button-container'>
