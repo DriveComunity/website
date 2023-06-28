@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import Slider from "react-slick";
 import { Context } from "../context/Context";
 import PopUp from "../PopUp/PopUp";
@@ -11,21 +11,38 @@ const SliderComponent = () => {
   const handleOpenPopup = () => {
     openPopup();
   };
+
+  const sliderRef = useRef(null);
+
+  const goToNextSlide = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const goToPrevSlide = () => {
+    sliderRef.current.slickPrev();
+  };
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // autoplay
-    autoplaySpeed: 2000, // Intervalo de tiempo entre cada slide (en milisegundos)
+    autoplay: true,
+    autoplaySpeed: 2000,
     appendDots: (dots) => (
       <div style={{ position: "absolute", bottom: 10, width: "100%", textAlign: "center" }}>
-        <ul style={{ margin: "0", padding: "0" }}>{dots}</ul>
+        <ul style={{ margin: 0, padding: 0 }}>
+          {dots.map((dot, index) => (
+            <li key={index}>
+              <button onClick={() => sliderRef.current.slickGoTo(index)}></button>
+            </li>
+          ))}
+        </ul>
       </div>
     ),
     customPaging: () => (
-      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "#fff", margin: "0 5px" }}></div>
+      <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#fff", margin: "0 5px" }}></div>
     ),
   };
 
@@ -62,7 +79,15 @@ const SliderComponent = () => {
 
   return (
     <div className='slider-wrapper'>
-      <Slider {...settings}>
+      <div className='slider-arrows'>
+        <button className='left' onClick={goToPrevSlide}>
+          &lt;
+        </button>
+        <button className='right' onClick={goToNextSlide}>
+          &gt;
+        </button>
+      </div>
+      <Slider ref={sliderRef} {...settings}>
         {slides.map((slide) => (
           <div key={slide.id}>
             <Slide image={slide.image} />

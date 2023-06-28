@@ -5,7 +5,7 @@ const Booking = () => {
     <div className='booking-container'>
       <div className='booking-content'>
         <div className='title-section'>
-          <h2>Book your DriveMe in just a few seconds!</h2>
+          <h3>Book your DriveMe in just a few seconds!</h3>
         </div>
         <div className='text-section'>
           <p>
