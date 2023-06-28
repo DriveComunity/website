@@ -11,8 +11,10 @@
 
 .card-number {
   text-align: right;
-  color: grey;
+  color: var(--base-grey);
   font-size: 40px;
+  line-height: 0;
+  font-weight: 700;
 }
 
 .card-number p {
@@ -20,5 +22,5 @@
 }
 
 .card-content p {
-  color: grey;
+  color: var(--base-grey);
 }

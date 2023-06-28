@@ -15,7 +15,7 @@
 }
 
 .cards-parent-container {
-  background-color: #e9e8e8;
+  background-color: var(--dark-white);
 }
 
 .cards-container {
