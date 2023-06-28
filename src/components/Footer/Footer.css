@@ -50,7 +50,7 @@
   font-size: 14px;
   text-align: center;
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .footer {
     background-color: var(--dark-white);
     color: var(--base-black);
@@ -71,4 +71,4 @@
   .rights {
     color: var(--base-black);
   }
-}
+} */
