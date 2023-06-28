@@ -4,7 +4,7 @@ import AboutUs from "../About/AboutUs";
 import Footer from "../Footer/Footer";
 import ContextProvider from "../context/Context";
 import Description from "../Description/Description";
-// import Options from "../Options/Options";
+import Options from "../Options/Options";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         <SliderComponent />
         <AboutUs />
         <Description />
-        {/* <Options /> */}
+        <Options />
         <Footer />
       </ContextProvider>
     </>

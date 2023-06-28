@@ -77,19 +77,3 @@
     margin: 0 5px;
   }
 }
-
-.section1 {
-  background-image: url("https://images.pexels.com/photos/8387438/pexels-photo-8387438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.section2 {
-  background-image: url("path_to_image_2");
-  /* Additional CSS properties for background */
-}
-
-.section3 {
-  background-image: url("path_to_image_3");
-  /* Additional CSS properties for background */
-}
