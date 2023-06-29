@@ -3,7 +3,7 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--base-white);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   box-shadow: 0 0 20px #00000080, 0 0 30px #0000004d;
@@ -59,7 +59,7 @@
   padding: 12px;
   font-size: 16px;
   background-color: var(--shine-green);
-  color: #fff;
+  color: var(--base-white);
   border: none;
   border-radius: 4px;
   cursor: pointer;

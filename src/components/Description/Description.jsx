@@ -22,7 +22,7 @@ const Description = () => {
                 <img src='src\assets\map-icon-white.png' alt='About Us' />
               </div>
               <div className='content-section'>
-                <h2>Book or offer your ride.</h2>
+                <h3>Book or offer your ride.</h3>
                 <p>
                   If you're a driver, mark your route and offer available seats. If you're a passenger, book a ride on
                   your desired route.
