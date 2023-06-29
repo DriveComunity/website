@@ -7,7 +7,7 @@
 
 .slide {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100vw;
 }
 
@@ -23,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .slide-content h1 {
@@ -31,17 +31,21 @@
   line-height: 0.2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
+  text-align: left;
 }
-.slide-content h5 {
-  font-size: 2vw;
-  line-height: 0.4;
+.slide-content p {
+  font-size: 1.5vw;
+  line-height: 1.2;
   color: white;
   opacity: 0.7;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  /* font-size: 22px; */
+  font-weight: 400;
 }
 
 .download-button {
-  padding: 10px 20px;
+  padding: 10px 60px;
   font-size: 16px;
   background: transparent;
   color: #fff;
@@ -49,6 +53,7 @@
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+  text-align: left;
 }
 
 .download-button:hover {
@@ -103,13 +108,26 @@
 .custom-dot.active {
   background: var(--shine-green);
 }
-
+@media screen and (max-width: 1024px) {
+  .slide-content p {
+    font-size: 2vw;
+  }
+  .download-button {
+    padding: 8px 40px;
+  }
+}
 @media screen and (max-width: 640px) {
+  .slide-content {
+    text-align: center;
+  }
+
   .slide-content h1 {
     font-size: 8vw;
+    text-align: center;
   }
   .slide-content p {
     font-size: 3vw;
+    text-align: center;
   }
   .download-button {
     padding: 5px 10px;
@@ -129,5 +147,8 @@
   .slider-arrows button {
     position: absolute;
     transform: translateY(-50%);
+  }
+  .download-button {
+    font-size: 12px;
   }
 }

@@ -54,25 +54,31 @@ const SliderComponent = () => {
       id: 1,
       image:
         "https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Your Trip, Your Adventure",
+      subtitle: "Let's drive together. Share rides!",
     },
     {
       id: 2,
       image:
         "https://images.pexels.com/photos/2705755/pexels-photo-2705755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Become a driver",
+      subtitle: "Share your trips, reduce costs",
     },
     {
       id: 3,
       image:
         "https://images.pexels.com/photos/620332/pexels-photo-620332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Become a Passenger",
+      subtitle: "Say goodbye to travel hassles! join as a passenger.",
     },
   ];
 
-  const Slide = ({ image, title }) => (
+  const Slide = ({ image, title, subtitle }) => (
     <div className='slide'>
       <img src={image} alt={title} />
       <div className='slide-content'>
-        <h1>Your Trip, Your Adventure</h1>
-        <h5>Let's drive together</h5>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
         <button className='download-button' onClick={handleOpenPopup}>
           Get the App
         </button>
@@ -93,7 +99,7 @@ const SliderComponent = () => {
       <Slider ref={sliderRef} {...settings}>
         {slides.map((slide) => (
           <div key={slide.id}>
-            <Slide image={slide.image} />
+            <Slide image={slide.image} title={slide.title} subtitle={slide.subtitle} />
           </div>
         ))}
       </Slider>
