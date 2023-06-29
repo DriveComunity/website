@@ -2,11 +2,12 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .slide {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100vw;
 }
 
@@ -22,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .slide-content h1 {
@@ -30,17 +31,21 @@
   line-height: 0.2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
+  text-align: left;
 }
-.slide-content h5 {
-  font-size: 2vw;
-  line-height: 0.4;
+.slide-content p {
+  font-size: 1.5vw;
+  line-height: 1.2;
   color: white;
   opacity: 0.7;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  /* font-size: 22px; */
+  font-weight: 400;
 }
 
 .download-button {
-  padding: 10px 20px;
+  padding: 10px 60px;
   font-size: 16px;
   background: transparent;
   color: #fff;
@@ -48,27 +53,97 @@
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+  text-align: left;
 }
 
 .download-button:hover {
   opacity: 0.8;
-  color: #1bcb7f;
+  color: var(--shine-green);
 }
 
+.slider-arrows {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+}
+
+.slider-arrows button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.slider-arrows .left {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.slider-arrows .right {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.custom-dot {
+  border-radius: 50%;
+  background: var(--base-white);
+  margin: 0 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-dot.active {
+  background: var(--shine-green);
+}
+@media screen and (max-width: 1024px) {
+  .slide-content p {
+    font-size: 2vw;
+  }
+  .download-button {
+    padding: 8px 40px;
+  }
+}
 @media screen and (max-width: 640px) {
+  .slide-content {
+    text-align: center;
+  }
+
   .slide-content h1 {
     font-size: 8vw;
+    text-align: center;
   }
   .slide-content p {
     font-size: 3vw;
+    text-align: center;
   }
   .download-button {
-    padding: 5px 10px;
-    font-size: 16px;
-    background: transparent;
-    color: #fff;
-    border: 2px #24a068 solid;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  .slider-arrows {
+    top: unset;
+    bottom: 15px;
+    transform: translateY(0);
+  }
+
+  .slider-arrows button {
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  .download-button {
+    font-size: 12px;
   }
 }

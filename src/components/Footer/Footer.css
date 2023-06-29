@@ -50,25 +50,3 @@
   font-size: 14px;
   text-align: center;
 }
-/* @media screen and (max-width: 1024px) {
-  .footer {
-    background-color: var(--dark-white);
-    color: var(--base-black);
-  }
-  .footer .title {
-    color: var(--base-black);
-  }
-  .register-button {
-    color: var(--base-black);
-    border: 2px solid var(--base-black);
-  }
-  .section {
-    color: var(--base-black);
-  }
-  .separator {
-    color: var(--base-black);
-  }
-  .rights {
-    color: var(--base-black);
-  }
-} */

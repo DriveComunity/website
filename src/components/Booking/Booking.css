@@ -14,11 +14,12 @@
 
 .title-section {
   display: flex;
-  font-size: 20px;
+  /* font-size: 20px; */
   text-align: right;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0px;
+  margin-top: 15px;
 }
 
 .text-section {
@@ -27,13 +28,13 @@
   text-align: right;
   align-items: center;
   justify-content: center;
-  margin-top: 0px;
 }
 
 .button-container {
   display: flex;
   justify-content: right;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .google-play-button,

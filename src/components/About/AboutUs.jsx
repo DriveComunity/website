@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "./AboutUs.css";
+import topLeftIcon from "../../assets/light-bulb-green.png";
+import bottomRightIcon from "../../assets/save-the-planet-green.png";
 
 const AboutUs = () => {
   const [selectedButton, setSelectedButton] = useState(1);
@@ -27,9 +29,12 @@ const AboutUs = () => {
       clearInterval(intervalId);
     };
   }, [isLoopActive]);
-  // className={`container ${selectedButton === 1 ? "section1" : ""}`}
+
   return (
     <div className='container'>
+      <img src={topLeftIcon} alt='Top Left Icon' className='top-left-icon' />
+      <img src={bottomRightIcon} alt='Bottom Right Icon' className='bottom-right-icon' />
+
       <h2 className='title'>Get to Know Us</h2>
 
       <div className='button-container'>
@@ -57,9 +62,9 @@ const AboutUs = () => {
           <div className='content'>
             <div className='text'>
               <p>
-                We are Drive Me, an innovative platform that connects drivers and passengers to facilitate safe and
-                convenient ridesharing. We have a mission to transform the way people travel, providing an efficient and
-                collaborative alternative.
+                We are Drive Comunity, an innovative platform that connects drivers and passengers to facilitate safe
+                and convenient ridesharing. We have a mission to transform the way people travel, providing an efficient
+                and collaborative alternative.
               </p>
             </div>
           </div>

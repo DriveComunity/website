@@ -5,18 +5,18 @@ const Booking = () => {
     <div className='booking-container'>
       <div className='booking-content'>
         <div className='title-section'>
-          <h2>Book your DriveMe in just a few seconds!</h2>
+          <h3>Book your Drive in just a few seconds!</h3>
         </div>
         <div className='text-section'>
           <p>
-            Share rides, save time! Say goodbye to traffic and travel hassles. Book your Drive-me in seconds and enjoy
+            Share rides, save time! Say goodbye to traffic and travel hassles. Book your Drive in seconds and enjoy
             cost-effective and eco-friendly journeys with fellow drivers and passengers. Join our carpooling community
             today!
           </p>
         </div>
         <div className='download-content'>
           <div className='title-section'>
-            <h2>Download Now</h2>
+            <h3>Download Now</h3>
           </div>
           <div className='text-section'>
             <p>
