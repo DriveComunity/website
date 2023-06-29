@@ -130,13 +130,8 @@
     text-align: center;
   }
   .download-button {
-    padding: 5px 10px;
-    font-size: 16px;
-    background: transparent;
-    color: var(--base-white);
-    border: 2px var(--base-green) solid;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 12px;
   }
   .slider-arrows {
     top: unset;

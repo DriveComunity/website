@@ -61,7 +61,7 @@ const SliderComponent = () => {
       id: 2,
       image:
         "https://images.pexels.com/photos/2705755/pexels-photo-2705755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "Become a driver",
+      title: "Become a Driver",
       subtitle: "Share your trips, reduce costs",
     },
     {

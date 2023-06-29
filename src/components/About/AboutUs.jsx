@@ -62,9 +62,9 @@ const AboutUs = () => {
           <div className='content'>
             <div className='text'>
               <p>
-                We are Drive Me, an innovative platform that connects drivers and passengers to facilitate safe and
-                convenient ridesharing. We have a mission to transform the way people travel, providing an efficient and
-                collaborative alternative.
+                We are Drive Comunity, an innovative platform that connects drivers and passengers to facilitate safe
+                and convenient ridesharing. We have a mission to transform the way people travel, providing an efficient
+                and collaborative alternative.
               </p>
             </div>
           </div>

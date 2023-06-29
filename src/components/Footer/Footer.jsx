@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <h2 className='title'>Be part of our Comunity</h2>
-      <button className='register-button'>Register</button>
+      <button className='register-button'>Get the App</button>
       <div className='footer-sections'>
         <button className='section'>Contact Us</button>
         <span className='separator'>|</span>
