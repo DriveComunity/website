@@ -88,14 +88,20 @@
 }
 
 .slick-dots li button:before {
-  color: white;
+  display: none;
 }
 
-.slick-dots li.slick-active button:before {
-  color: green;
+.custom-dot {
+  border-radius: 50%;
+  background: var(--base-white);
+  margin: 0 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-.slick-dots li.slick-active button:before {
-  color: green !important;
+
+.custom-dot.active {
+  background: var(--shine-green);
 }
 
 @media screen and (max-width: 640px) {

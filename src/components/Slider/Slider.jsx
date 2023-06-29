@@ -5,6 +5,7 @@ import PopUp from "../PopUp/PopUp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
+import { BsChevronLeft, BsChevronRight } from "react-icons/Bs";
 
 const SliderComponent = () => {
   const { openPopup } = useContext(Context);
@@ -34,7 +35,10 @@ const SliderComponent = () => {
       <div style={{ position: "absolute", bottom: 10, width: "100%", textAlign: "center" }}>
         <ul style={{ margin: 0, padding: 0 }}>
           {dots.map((dot, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className={`custom-dot ${dot.props.className === "slick-active" ? "active" : ""}`}
+              style={{ width: "5px", height: "5px" }}>
               <button onClick={() => sliderRef.current.slickGoTo(index)}></button>
             </li>
           ))}
@@ -45,7 +49,6 @@ const SliderComponent = () => {
       <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#fff", margin: "0 5px" }}></div>
     ),
   };
-
   const slides = [
     {
       id: 1,
@@ -81,10 +84,10 @@ const SliderComponent = () => {
     <div className='slider-wrapper'>
       <div className='slider-arrows'>
         <button className='left' onClick={goToPrevSlide}>
-          &lt;
+          <BsChevronLeft />
         </button>
         <button className='right' onClick={goToNextSlide}>
-          &gt;
+          <BsChevronRight />
         </button>
       </div>
       <Slider ref={sliderRef} {...settings}>
