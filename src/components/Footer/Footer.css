@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: var(--base-green);
-  height: 50vh;
+  height: 60vh;
 }
 
 .footer .title {
@@ -39,6 +39,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .separator {

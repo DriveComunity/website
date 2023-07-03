@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 60vh;
   background-color: var(--base-green);
 }
 
 .banner .title-banner {
   color: var(--base-white);
   line-height: var(--xl-line-height);
-  font-size: 90px;
+  font-size: 110px;
   text-align: center;
 }
 
@@ -28,12 +28,20 @@
 /* MEDIA QUERIES FOR RESPONSIVE STYLES */
 
 @media screen and (max-width: 640px) {
+  .banner {
+    height: 30vh;
+  }
+
+  .banner .title-banner {
+    font-size: 65px;
+  }
+
   .cards-container {
     display: grid;
     grid-template-columns: auto;
   }
 
-  .card {
-    margin-right: 90px;
+  .footer {
+    height: 45vh;
   }
 }

@@ -6,19 +6,20 @@ import "./ForUsers.css";
 
 let contentArray = [
   [
-    'Primer titulo',
-    'Habia una vez un circo que alegraba siempre el corazon'
+    'Mark Your Route:',
+    'Enter the origin and destination of your trip, along with the date and time of departure. Specify the number of available seats in your vehicle.'
   ],
   [
-    'Segundo titulo',
-    'Poco a poco, fuimos volviendonos locos'
+    'Offer Available Seats:',
+    'Provide details about your vehicle, such as make, model, and any additional preferences or requirements. Set a fair price for the available seats, if applicable.'
   ],
   [
-    'Tercer titulo', 
-    'Muchachooos, ahora nos volvimos a ilusionar, quiero ganar la tercera, quiero ser campeon mundial'],
+    'Receive Booking Requests:', 
+    'Once your trip is posted, interested passengers can send booking requests. Review the requests and accept those that meet your criteria.'
+  ],
   [
-    'Cuarto titulo',
-    'Meeeeeesssiii, meeeeeessssiiiii, messssssiiiiii'
+    'Enjoy the Shared Journey:',
+    'Connect with your passengers and embark on a shared journey. Enjoy the benefits of cost-sharing, reduced traffic, and the opportunity to meet new people.'
   ]
 ];
 

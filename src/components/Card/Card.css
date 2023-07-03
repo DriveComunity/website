@@ -1,7 +1,10 @@
 .card {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
   gap: 5px;
+  padding: 20px;
+  margin: 20px;
+  align-self: flex-start;
 }
 
 .card-number,
@@ -19,8 +22,21 @@
 
 .card-number p {
   align-self: flex-start;
+  padding-left: 60px;
+}
+
+.card-content {
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h2 {
+  margin-bottom: 5px;
 }
 
 .card-content p {
   color: var(--base-grey);
+  margin-top: 10px;
 }

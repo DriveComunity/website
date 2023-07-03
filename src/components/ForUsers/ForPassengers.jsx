@@ -6,19 +6,19 @@ import './ForUsers.css';
 
 let contentArray = [
   [
-    'Primer titulo',
-    'Habia una vez un circo que alegraba siempre el corazon'
+    'Search for Rides:',
+    'Enter your desired origin, destination, and travel date to find available rides matching your criteria. Browse through the list of options.'
   ],
   [
-    'Segundo titulo',
-    'Poco a poco, fuimos volviendonos locos'
+    'Book a Ride:',
+    'Select a suitable trip and send a booking request to the driver. Provide any necessary information, such as your contact details.'
   ],
   [
-    'Tercer titulo', 
-    'Muchachooos, ahora nos volvimos a ilusionar, quiero ganar la tercera, quiero ser campeon mundial'],
+    'Receive Confirmation:', 
+    'Once the driver reviews your request, they will either accept or decline it. Upon acceptance, you will receive a confirmation with the trip details.'],
   [
-    'Cuarto titulo',
-    'Meeeeeesssiii, meeeeeessssiiiii, messssssiiiiii'
+    'Connect and Travel:',
+    'Connect with the driver and fellow passengers for a shared journey. Enjoy the cost-saving benefits, contribute to reducing traffic congestion, and make new connections along the way.'
   ]
 ];
 
