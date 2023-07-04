@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { useContext } from "react";
 import Contact from "../Contact/Contact";
+import PopUp from "../PopUp/PopUp";
 import { Context } from "../context/Context";
 
 const Footer = () => {
@@ -28,6 +29,7 @@ const Footer = () => {
       </div>
       <p className='rights'>All rights reserved DriveComunity</p>
       {showContactForm && <Contact />}
+      {openPopup && <PopUp />}
     </footer>
   );
 };
