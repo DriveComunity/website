@@ -40,7 +40,12 @@ const ForDrivers = () => {
       </div>
       <div className='cards-container'>
         {contentArray.map((e, index) => (
-          <Card key={index} title={e[0]} par={e[1]} number={index + 1 + " |"} />
+          <Card 
+          key={index} 
+          title={e[0]} 
+          par={e[1]} 
+          number={window.innerWidth <= 640 ? index + 1 : index + 1 + ' |'} 
+          />
         ))}
       </div>
       <Footer />
