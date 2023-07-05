@@ -4,13 +4,12 @@
   align-items: center;
   justify-content: center;
   background: var(--base-green);
-  height: 60vh;
 }
 
 .footer .title {
   color: var(--base-white);
   font-size: 44px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .register-button {
@@ -24,11 +23,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 1.1rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .footer-sections {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .section {
@@ -39,7 +38,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .separator {
