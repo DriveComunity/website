@@ -9,7 +9,7 @@ const AboutUs = () => {
 
   const handleButtonClick = (buttonId) => {
     setSelectedButton(buttonId);
-    setIsLoopActive(false); // Detener el loop cuando el usuario selecciona un botón
+    setIsLoopActive(false);
   };
 
   useEffect(() => {
@@ -18,14 +18,12 @@ const AboutUs = () => {
     if (isLoopActive) {
       intervalId = setInterval(() => {
         setSelectedButton((prevButton) => {
-          // Incrementa el valor del botón actual en 1
           return prevButton === 3 ? 1 : prevButton + 1;
         });
-      }, 10000); // Cambia de botón cada 10 segundos
+      }, 10000);
     }
 
     return () => {
-      // Limpia el intervalo cuando el componente se desmonta
       clearInterval(intervalId);
     };
   }, [isLoopActive]);
