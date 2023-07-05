@@ -24,23 +24,28 @@
   grid-template-columns: repeat(2, 1fr);
   /* gap: 10px; */
   width: 60%;
-  margin-left: 20%;
+  margin-left: calc((90vw - 1024px) / 4);
+  margin-right: calc((90vw - 1024px) / 4);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVE STYLES */
 
-/* @media screen and (min-width: 1024px) {
-  .content {
-    margin-left: calc((90vw - 600px) / 2);
-    margin-right: calc((90vw - 600px) / 2);
+@media screen and (min-width: 1024px) {
+  .banner {
+    height: 40vh;
   }
-  .top-left-icon {
-    left: 15px;
+
+  .banner .title-banner {
+    font-size: 140px;
   }
-  .bottom-right-icon {
-    right: 5px;
+
+  .cards-container {
+    margin-left: calc((90vw - 1024px) / 4);
+    margin-right: calc((90vw - 1024px) / 4);
   }
-} */
+}
 
 @media screen and (max-width: 640px) {
   .banner {
@@ -64,7 +69,7 @@
 
   .card-number,
   .card-content {
-    text-align: left; /* Center-align the content */
+    text-align: left;
     max-width: 80%;
     height: fit-content;
   }
