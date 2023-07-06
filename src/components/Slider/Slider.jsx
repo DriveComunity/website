@@ -53,7 +53,7 @@ const SliderComponent = () => {
     {
       id: 1,
       image:
-        "https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.unsplash.com/photo-1524645343120-a4ae9f7d4343?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       title: "Your Trip, Your Adventure",
       subtitle: "Let's drive together. Share rides!",
     },
@@ -67,7 +67,7 @@ const SliderComponent = () => {
     {
       id: 3,
       image:
-        "https://images.pexels.com/photos/620332/pexels-photo-620332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.unsplash.com/photo-1617180705595-58e1bde06b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       title: "Become a Passenger",
       subtitle: "Say goodbye to travel hassles! join as a passenger.",
     },
