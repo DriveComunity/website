@@ -56,7 +56,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* margin: 10px; */
   margin-left: calc((90vw - 450px) / 4);
   margin-right: calc((90vw - 450px) / 4);
 }
@@ -107,7 +106,7 @@
   .bottom-right-icon {
     margin: 10px;
     height: 30px;
-    top: 490px;
+    top: 495px;
     right: 5px;
   }
   .top-left-icon {

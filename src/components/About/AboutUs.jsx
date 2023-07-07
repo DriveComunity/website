@@ -86,7 +86,7 @@ const AboutUs = () => {
                 Because we believe in collaborative and sustainable travel. Our platform offers affordable, safe, and
                 verified ridesharing options. Join our community for convenient and eco-friendly commuting, enhanced by
                 user ratings and feedback. Simplify your daily travels, connect with others, and contribute to a better
-                future with Drive Me.
+                future with Drive Comunity.
               </p>
             </div>
           </div>

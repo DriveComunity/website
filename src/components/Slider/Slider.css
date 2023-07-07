@@ -87,9 +87,17 @@
   transform: translateY(-50%);
 }
 
+.slider-arrows .left img {
+  height: 20px;
+}
+
 .slider-arrows .right {
   right: 10px;
   transform: translateY(-50%);
+}
+
+.slider-arrows .right img {
+  height: 20px;
 }
 
 .slick-dots li button:before {
@@ -145,5 +153,12 @@
   }
   .download-button {
     font-size: 12px;
+  }
+  .slider-arrows .left img {
+    height: 12px;
+  }
+
+  .slider-arrows .right img {
+    height: 12px;
   }
 }
