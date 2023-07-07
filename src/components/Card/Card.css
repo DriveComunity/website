@@ -23,6 +23,7 @@
 .card-number p {
   align-self: flex-start;
   padding-left: 60px;
+  font-size: 32px;
 }
 
 .card-content {

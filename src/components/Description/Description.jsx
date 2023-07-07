@@ -1,7 +1,26 @@
+import React from "react";
 import Booking from "../Booking/Booking";
 import phoneImg from "../../assets/mockup.png";
 import mapIcon from "../../assets/map-icon-white.png";
 import "./Description.css";
+
+const cardData = [
+  {
+    title: "Book or offer your ride.",
+    description:
+      "If you're a driver, mark your route and offer available seats. If you're a passenger, book a ride on your desired route.",
+  },
+  {
+    title: "Share expenses and reduce traffic.",
+    description:
+      "By sharing rides, you'll have the opportunity to split expenses and say goodbye to traffic and travel hassles.",
+  },
+  {
+    title: "Encourage social interaction and community:",
+    description:
+      "Join our community of drivers and passengers, fostering social interaction and building connections during your shared journeys.",
+  },
+];
 
 const Description = () => {
   return (
@@ -13,48 +32,19 @@ const Description = () => {
       </div>
       <div className='description-container'>
         <div className='content-container'>
-          <div className='row-container'>
-            <div className='column-container'>
-              <div className='image'>
-                <img src={mapIcon} alt='About Us' />
-              </div>
-              <div className='content-section'>
-                <h3>Book or offer your ride.</h3>
-                <p>
-                  If you're a driver, mark your route and offer available seats. If you're a passenger, book a ride on
-                  your desired route.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className='row-container'>
-            <div className='column-container'>
-              <div className='image'>
-                <img src={mapIcon} alt='About Us' />
-              </div>
-              <div className='content-section'>
-                <h3>Share expenses and reduce traffic.</h3>
-                <p>
-                  By sharing rides, you'll have the opportunity to split expenses and say goodbye to traffic and travel
-                  hassles
-                </p>
+          {cardData.map((card, index) => (
+            <div className='row-container' key={index}>
+              <div className='column-container'>
+                <div className='image'>
+                  <img src={mapIcon} alt='About Us' />
+                </div>
+                <div className='content-section'>
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='row-container'>
-            <div className='column-container'>
-              <div className='image'>
-                <img src={mapIcon} alt='About Us' />
-              </div>
-              <div className='content-section'>
-                <h3>Encourage social interaction and community:</h3>
-                <p>
-                  Join our community of drivers and passengers, fostering social interaction and building connections
-                  during your shared journeys.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
