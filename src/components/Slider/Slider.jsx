@@ -5,7 +5,8 @@ import PopUp from "../PopUp/PopUp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
-import { BsChevronLeft, BsChevronRight } from "react-icons/Bs";
+import arrowLeft from "../../assets/left-arrow-white.png";
+import arrowRight from "../../assets/right-arrow-white.png";
 
 const SliderComponent = () => {
   const { openPopup } = useContext(Context);
@@ -90,10 +91,10 @@ const SliderComponent = () => {
     <div className='slider-wrapper'>
       <div className='slider-arrows'>
         <button className='left' onClick={goToPrevSlide}>
-          <BsChevronLeft />
+          <img src={arrowLeft} alt='arrow-left' />
         </button>
         <button className='right' onClick={goToNextSlide}>
-          <BsChevronRight />
+          <img src={arrowRight} alt='arrow-right' />
         </button>
       </div>
       <Slider ref={sliderRef} {...settings}>

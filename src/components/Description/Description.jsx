@@ -1,5 +1,6 @@
 import Booking from "../Booking/Booking";
-// import PhoneSketch from "../PhoneSketch/PhoneSketch";
+import phoneImg from "../../assets/mockup.png";
+import mapIcon from "../../assets/map-icon-white.png";
 import "./Description.css";
 
 const Description = () => {
@@ -7,19 +8,15 @@ const Description = () => {
     <div className='parent-container'>
       <Booking />
       <div className='img-container'>
-        {/* <div className='animation-container'>
-          <PhoneSketch />
-        </div> */}
         <h1 className='phone-title'>DRIVE COMUNITY</h1>
-        {/* {window.innerWidth <= 1024 && <h1 className='phone-title'>DriveMe</h1>} */}
-        <img src='src/assets/mockup.png' alt='cellphone' className='phone-img' />
+        <img src={phoneImg} alt='cellphone' className='phone-img' />
       </div>
       <div className='description-container'>
         <div className='content-container'>
           <div className='row-container'>
             <div className='column-container'>
               <div className='image'>
-                <img src='src\assets\map-icon-white.png' alt='About Us' />
+                <img src={mapIcon} alt='About Us' />
               </div>
               <div className='content-section'>
                 <h3>Book or offer your ride.</h3>
@@ -33,7 +30,7 @@ const Description = () => {
           <div className='row-container'>
             <div className='column-container'>
               <div className='image'>
-                <img src='src\assets\map-icon-white.png' alt='About Us' />
+                <img src={mapIcon} alt='About Us' />
               </div>
               <div className='content-section'>
                 <h3>Share expenses and reduce traffic.</h3>
@@ -47,7 +44,7 @@ const Description = () => {
           <div className='row-container'>
             <div className='column-container'>
               <div className='image'>
-                <img src='src\assets\map-icon-white.png' alt='About Us' />
+                <img src={mapIcon} alt='About Us' />
               </div>
               <div className='content-section'>
                 <h3>Encourage social interaction and community:</h3>
