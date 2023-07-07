@@ -15,7 +15,7 @@
 }
 
 .cards-parent-container {
-  background-color: var(--dark-white);
+  background-color: var(--base-white);
 }
 
 .cards-container {
@@ -47,7 +47,7 @@
   }
 
   .banner .title-banner {
-    font-size: 65px;
+    font-size: 55px;
   }
 
   .cards-container {
