@@ -9,9 +9,8 @@ const Booking = () => {
         </div>
         <div className='text-section'>
           <p>
-            Share rides, save time! Say goodbye to traffic and travel hassles. Book your Drive in seconds and enjoy
-            cost-effective and eco-friendly journeys with fellow drivers and passengers. Join our carpooling community
-            today!
+            Share rides, save time! Say goodbye to travel hassles. Book your Drive in seconds and enjoy cost-effective
+            and eco-friendly journeys with fellow drivers and passengers. Join our carpooling community today!
           </p>
         </div>
         <div className='download-content'>

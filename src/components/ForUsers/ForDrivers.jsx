@@ -11,7 +11,7 @@ let contentArray = [
   ],
   [
     "Offer Available Seats:",
-    "Provide details about your vehicle, such as make, model, and any additional preferences or requirements. Set a fair price for the available seats, if applicable.",
+    "Provide details about your vehicle, such as make, model, and any additional preferences or requirements. Set a fair price for the available seats.",
   ],
   [
     "Receive Booking Requests:",
@@ -40,12 +40,7 @@ const ForDrivers = () => {
       </div>
       <div className='cards-container'>
         {contentArray.map((e, index) => (
-          <Card 
-          key={index} 
-          title={e[0]} 
-          par={e[1]} 
-          number={window.innerWidth <= 640 ? index + 1 : index + 1 + ' |'} 
-          />
+          <Card key={index} title={e[0]} par={e[1]} number={window.innerWidth <= 640 ? index + 1 : index + 1 + " |"} />
         ))}
       </div>
       <Footer />

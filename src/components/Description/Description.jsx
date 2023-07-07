@@ -12,8 +12,7 @@ const cardData = [
   },
   {
     title: "Share expenses and reduce traffic.",
-    description:
-      "By sharing rides, you'll have the opportunity to split expenses and say goodbye to traffic and travel hassles.",
+    description: "By sharing rides, you'll have the opportunity to split expenses and say goodbye to travel hassles.",
   },
   {
     title: "Encourage social interaction and community:",
