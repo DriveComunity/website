@@ -1,7 +1,7 @@
 import React, { useContext, useState, useRef } from "react";
 import { Context } from "../context/Context";
-// import emailjs from "@emailjs/browser";
-// import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_USER_ID } from "../../config.js";
+import emailjs from "@emailjs/browser";
+import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_USER_ID } from "../../config.js";
 import "./Contact.css";
 
 const Contact = () => {
@@ -11,21 +11,21 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   emailjs.sendForm(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, form.current, EMAIL_USER_ID).then(
-  //     (result) => {
-  //       console.log(result.text);
-  //       setName("");
-  //       setEmail("");
-  //       setMessage("");
-  //     },
-  //     (error) => {
-  //       console.log(error.text);
-  //     }
-  //   );
-  // };
+    emailjs.sendForm(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, form.current, EMAIL_USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        setName("");
+        setEmail("");
+        setMessage("");
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
 
   return (
     <>
