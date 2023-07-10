@@ -9,7 +9,7 @@
 .card-content {
   text-align: left;
   min-width: 180px;
-  max-width: 180px;
+  max-width: 280px;
 }
 
 .card-number {
@@ -23,7 +23,7 @@
 .card-number p {
   align-self: flex-start;
   padding-left: 60px;
-  font-size: 32px;
+  font-size: 64px;
 }
 
 .card-content {
@@ -34,11 +34,14 @@
 }
 
 .card-content h2 {
+  font-size: 40px;
   margin-bottom: 5px;
   min-height: 60px;
+  white-space: pre-wrap;
 }
 
 .card-content p {
+  font-size: 30px;
   color: var(--base-grey);
   margin-top: 10px;
 }

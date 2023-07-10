@@ -22,8 +22,8 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   margin-left: calc((100% - 1024px) / 2);
   margin-right: calc((100% - 1024px) / 2);
   margin-top: 5vh;
@@ -38,6 +38,10 @@
     margin-right: auto;
     max-width: 1024px;
     width: 100%;
+  }
+
+  .card-content h2 {
+    white-space: normal;
   }
 }
 
@@ -77,6 +81,7 @@
   .card-content h2 {
     margin-bottom: 5px;
     min-height: 0px;
+    white-space: normal;
   }
 
   .card-content p {

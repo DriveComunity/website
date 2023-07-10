@@ -10,7 +10,7 @@ const contentArray = [
     "Enter your desired origin, destination, and travel date to find available rides matching your criteria. Browse through the list of options.",
   ],
   [
-    "Book a Ride:",
+    `Book a           Ride:`,
     "Select a suitable trip and send a booking request to the driver. Provide any necessary information, such as your contact details.",
   ],
   [
