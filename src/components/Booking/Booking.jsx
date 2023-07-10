@@ -1,6 +1,13 @@
+import { useContext } from "react";
+import { Context } from "../context/Context";
+import PopUp from "../PopUp/PopUp";
 import "./Booking.css";
 
 const Booking = () => {
+  const { openPopup } = useContext(Context);
+  const handleOpenPopup = () => {
+    openPopup();
+  };
   return (
     <div className='booking-container'>
       <div className='booking-content'>
@@ -24,21 +31,14 @@ const Booking = () => {
             </p>
           </div>
           <div className='button-container'>
-            <a
-              href='https://play.google.com/store/apps'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='google-play-button fa-app-store'>
+            <button onClick={handleOpenPopup} rel='noopener noreferrer' className='google-play-button fa-app-store'>
               Google Play
-            </a>
-            <a
-              href='https://www.apple.com/app-store/'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='apple-store-button fa-app-store'>
+            </button>
+            <button onClick={handleOpenPopup} rel='noopener noreferrer' className='apple-store-button fa-app-store'>
               Apple Store
-            </a>
+            </button>
           </div>
+          {openPopup && <PopUp />}
         </div>
       </div>
     </div>
