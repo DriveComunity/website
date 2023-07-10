@@ -2,6 +2,8 @@ import React, { useContext, useState, useRef } from "react";
 import { Context } from "../context/Context";
 import emailjs from "@emailjs/browser";
 import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_USER_ID } from "../../config.js";
+// ES6 Modules or TypeScript
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 const Contact = () => {
@@ -20,9 +22,23 @@ const Contact = () => {
         setName("");
         setEmail("");
         setMessage("");
+        Swal.fire({
+          position: "medium-center",
+          icon: "success",
+          title: "Your email was sent!",
+          confirmButtonText: "Ok",
+          zIndex: 50,
+        });
       },
       (error) => {
         console.log(error.text);
+        Swal.fire({
+          title: "something went wrong!",
+          text: "Please, try it again!",
+          icon: "error",
+          confirmButtonText: "Ok",
+          zIndex: 50,
+        });
       }
     );
   };
