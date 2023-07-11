@@ -45,12 +45,3 @@
   color: var(--base-grey);
   margin-top: 10px;
 }
-
-@media screen and (max-width: 640px) {
-  .card-number p {
-    font-size: 35px;
-  }
-  .card-content h2 {
-    font-size: 25px;
-  }
-}

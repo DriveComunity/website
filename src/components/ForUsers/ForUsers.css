@@ -76,12 +76,14 @@
     padding-left: 0;
     text-align: left;
     margin-bottom: 5px;
+    font-size: 35px;
   }
 
   .card-content h2 {
     margin-bottom: 5px;
     min-height: 0px;
     white-space: nowrap;
+    font-size: 25px;
   }
 
   .card-content p {
