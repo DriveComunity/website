@@ -23,7 +23,7 @@
 .card-number p {
   align-self: flex-start;
   padding-left: 60px;
-  font-size: 64px;
+  font-size: 50px;
 }
 
 .card-content {
@@ -34,14 +34,23 @@
 }
 
 .card-content h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 5px;
   min-height: 60px;
   white-space: pre-wrap;
 }
 
 .card-content p {
-  font-size: 30px;
+  font-size: 18px;
   color: var(--base-grey);
   margin-top: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .card-number p {
+    font-size: 35px;
+  }
+  .card-content h2 {
+    font-size: 25px;
+  }
 }
