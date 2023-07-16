@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className='nav-container'>
       <nav className='navbar'>
         <NavLink exact='true' to='/' className='navbar-logo' onClick={handleLogoClick}>
-          <h1 className='navbar-logo'>DRIVE COMUNITY.</h1>
+          <h1 className='navbar-logo'>DRIVE COMMUNITY.</h1>
         </NavLink>
         <div className={`menu-toggle ${isMenuOpen ? "is-active" : ""}`} id='mobile-menu' onClick={toggleMenu}>
           <span className='bar'></span>

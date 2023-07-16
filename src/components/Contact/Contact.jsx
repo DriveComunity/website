@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import { useContext, useState, useRef } from "react";
 import { Context } from "../context/Context";
 import emailjs from "@emailjs/browser";
 import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_USER_ID } from "../../confing.js";

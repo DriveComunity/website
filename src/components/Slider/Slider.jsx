@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import { useContext, useRef } from "react";
 import Slider from "react-slick";
 import { Context } from "../context/Context";
 import PopUp from "../PopUp/PopUp";
