@@ -60,7 +60,7 @@ const AboutUs = () => {
           <div className='content'>
             <div className='text'>
               <p>
-                We are Drive Comunity, an innovative platform that connects drivers and passengers to facilitate safe
+                We are Drive Community, an innovative platform that connects drivers and passengers to facilitate safe
                 and convenient ridesharing. We have a mission to transform the way people travel, providing an efficient
                 and collaborative alternative.
               </p>
@@ -86,7 +86,7 @@ const AboutUs = () => {
                 Because we believe in collaborative and sustainable travel. Our platform offers affordable, safe, and
                 verified ridesharing options. Join our community for convenient and eco-friendly commuting, enhanced by
                 user ratings and feedback. Simplify your daily travels, connect with others, and contribute to a better
-                future with Drive Comunity.
+                future with Drive Community.
               </p>
             </div>
           </div>

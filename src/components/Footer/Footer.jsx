@@ -14,7 +14,7 @@ const Footer = () => {
   };
   return (
     <footer className='footer'>
-      <h2 className='title'>Be part of our Comunity</h2>
+      <h2 className='title'>Be part of our Community</h2>
       <button className='register-button' onClick={handleOpenPopup}>
         Get the App
       </button>
@@ -27,7 +27,7 @@ const Footer = () => {
           Get the App
         </button>
       </div>
-      <p className='rights'>All rights reserved DriveComunity</p>
+      <p className='rights'>All rights reserved DriveCommunity</p>
       {showContactForm && <Contact />}
       {openPopup && <PopUp />}
     </footer>
