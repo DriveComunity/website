@@ -27,7 +27,8 @@ const Footer = () => {
           Get the App
         </button>
       </div>
-      <p className='rights'>All rights reserved DriveCommunity</p>
+      <p className='rights'>Part of Microsoft for Startups Founders Hub </p>
+      <p className='rights'>All rights reserved Drive Community</p>
       {showContactForm && <Contact />}
       {openPopup && <PopUp />}
     </footer>

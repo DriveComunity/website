@@ -26,7 +26,7 @@ const Description = () => {
     <div className='parent-container'>
       <Booking />
       <div className='img-container'>
-        <h1 className='phone-title'>DRIVE COMUNITY</h1>
+        <h1 className='phone-title'>DRIVE COMMUNITY</h1>
         <img src={phoneImg} alt='cellphone' className='phone-img' />
       </div>
       <div className='description-container'>
