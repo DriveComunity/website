@@ -31,11 +31,13 @@ const Booking = () => {
             </p>
           </div>
           <div className='button-container'>
-            <button onClick={handleOpenPopup} rel='noopener noreferrer' className='google-play-button fa-app-store'>
-              Google Play
+            <button onClick={handleOpenPopup} class='market-btn google-btn' rel='noopener noreferrer'>
+              <span class='market-button-subtitle'>Download on the</span>
+              <span class='market-button-title'>Google Play</span>
             </button>
-            <button onClick={handleOpenPopup} rel='noopener noreferrer' className='apple-store-button fa-app-store'>
-              Apple Store
+            <button onClick={handleOpenPopup} class='market-btn apple-btn' rel='noopener noreferrer'>
+              <span class='market-button-subtitle'>Download on the</span>
+              <span class='market-button-title'>App Store</span>
             </button>
           </div>
           {openPopup && <PopUp />}

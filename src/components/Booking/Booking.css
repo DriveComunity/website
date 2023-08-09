@@ -34,45 +34,45 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  margin-bottom: 15px;
 }
 
-.google-play-button,
-.apple-store-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.market-btn {
+  display: inline-block;
+  padding: 0.3125rem 0.875rem;
+  padding-left: 2.8125rem;
+  background-position: center left 0.75rem;
+  background-color: #000;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  text-decoration: none;
   border: none;
   border-radius: 4px;
-  padding: 12px 16px;
-  margin: 8px;
-  color: var(--base-white);
-  font-size: 16px;
-  font-weight: bold;
+}
+.market-btn .market-button-title {
+  display: block;
+  color: #fff;
+  font-size: 1.125rem;
+}
+.market-btn .market-button-subtitle {
+  display: block;
+  margin-bottom: 0.1rem;
+  color: #fff;
+  font-size: 0.65rem;
+}
+.market-btn:hover {
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  opacity: 0.8;
+}
+.apple-btn {
+  background-image: url("../../assets/apple-logo_white.png");
 }
 
-.google-play-button {
-  background-color: #4285f4;
-  text-decoration: none;
+.google-btn {
+  background-image: url("../../assets/google-play.png");
+  margin-right: 1.3rem;
 }
 
-.apple-store-button {
-  background-color: #000;
-  text-decoration: none;
-}
-
-.google-play-button,
-.apple-store-button {
-  margin-right: 8px;
-  text-decoration: none;
-}
-
-.google-play-button:hover,
-.apple-store-button:hover {
-  filter: brightness(90%);
-}
 .title-section {
   max-width: 400px;
 }
